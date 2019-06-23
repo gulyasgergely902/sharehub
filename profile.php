@@ -1,18 +1,14 @@
 <html>
 	<head>
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="Blawg">
 
-		<title>ShareHUB</title>
-
+		<title>ShareHUB [DEBUG]</title>
 
 		<!-- SCRIPTS -->
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!--<script src="vendor/tail-writer/js/marked.js"></script>-->
 		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<script src="vendor/tail-writer/js/tail.writer.min.js"></script>
 		<script>
