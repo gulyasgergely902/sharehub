@@ -1,0 +1,16 @@
+.btn-right{
+	float: right;
+}
+
+.longButton{
+	width: 100%;
+	margin: 0;
+}
+
+.btn-secondary{
+	background-color: #a6a6a6;
+}
+
+.btn-secondary:hover {
+	background-color: #969696;
+}

@@ -1,0 +1,89 @@
+.userProfile{
+	margin: auto;
+    width: 50%;
+	display: inline-box;
+	background: #F4F4F4;
+	border: 1px #DDDDDD solid;
+	border-radius: 10px;
+	padding: 20px;
+	position:absolute;
+	top:10%;
+    left:25%;
+}
+
+.wrapper{
+	
+}
+
+.chartWrapper{
+	border-radius: 10px;
+	height:300px;
+	width:400px;
+	background: #fff;
+	border: 1px #DDDDDD solid;
+	padding: 5px;
+}
+
+.code{
+	padding: 3px;
+	border-radius: 3px;
+	background-color: #A3A3A3;
+	margin-left: 8px;
+}
+
+.inline{
+	display: inline-block;
+}
+
+.alertText{
+	font-size: 85%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+		display: flex;
+	}
+	
+	.userData{
+		flex: 1;
+		margin-left: 20px;
+	}
+	
+	.chartWrapper{
+		flex: 0 0 30%;
+	}
+}
+
+@media only screen and (max-width: 1340px) {
+    h3{
+		font-size: 1.5rem;
+	}
+	h5{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    .chartWrapper {
+        height:200px;
+		width:200px;
+    }
+	.userData{
+		margin-top: 20px;
+	}
+}
+
+.backbtn{
+	width: 50px;
+	height: 25px;
+	border-radius: 10px;
+	background: #A3A3A3;
+	padding: 3px;
+	font-size: 100%;
+	color: #FFFFFF;
+}
+
+.backbtn:hover{
+	color: #DDDDDD;
+	background: #B3B3B3;
+}

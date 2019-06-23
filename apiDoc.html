@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>ShareHUB API Documentaton</title>
+		<link rel="stylesheet" type="text/css" href="css/apidocStyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="titleContainer">
+				<h1>ShareHUB API Documentation</h1>
+			</div>
+			<div class="tableOfContents">
+				<h3 class="contentTitle">Contents</h3>
+				<ul>
+					<li><a href="#getting_started">Getting Started</a></li>
+					<ul>
+						<li>How it works</li>
+						<li>How data stored</li>
+						<li>Data types</li>
+						<li>Requirements</li>
+						<li>API Key</li>
+					</ul>
+					<li><a href="#data_exchange">Data exchange</a></li>
+					<ul>
+						<li>Getting data</li>
+						<li>Adding data</li>
+					</ul>
+					<li><a href="#sample_requests">Sample requests</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<a id="getting_started"></a><h2>Getting started</h2>
+				<hr>
+				<h3>How it works</h3>
+				<p>
+					ShareHUB API uses a php page to get and add data from/to the DB. You can use it as a gateway to get the stored data from the
+					HUB and add data to it.
+				</p>
+				<h3>How data stored</h3>
+				<p>
+					Data is stored in a MySQL database. When you use the API, it will query the DB and returns a JSON file you can use in your application.
+				</p>
+				<h3>Data types</h3>
+				<p>
+					On the website, if you add a new snippet, you can give it a name, a description, content and files (optional). With the API,
+					you can only add text, no files. (yet.)
+				</p>
+				<h3>Requirements</h3>
+				<p>
+					To use the API, you have to have an account on ShareHUB, after that you need an API key to exchange data.
+				</p>
+				<h3>API Key</h3>
+				<p>
+					To get an API key, go to your profile details by clicking on your name on the profile page. Your API key will be below the used space.
+				</p>
+				<a id="data_exchange"></a><h2>Data exchange</h2>
+				<hr>
+				<p>
+					To get/add data, you have to make a POST request. The details are below:
+					<ul>
+						<li>Address: http://blawg.hu/demo/sharehub/api.php?method=<i>METHOD</i></li>
+						<li>Parameters: different for GET/ADD, listed below</li>
+					</ul>
+				</p>
+				<h3>Getting data</h3>
+				<p>
+					<ul>
+						<li>URL Parameters:</li>
+						<ul>
+							<li>method=<i>GET</i></li>
+						</ul>
+						<li>POST Parameters:</li>
+						<ul>
+							<li>apiKey: <i>API_KEY</i></li>
+						</ul>
+					</ul>
+				</p>
+				<h3>Adding data</h3>
+				<p>
+				<ul>
+					<li>URL Parameters:</li>
+					<ul>
+						<li>method=<i>ADD</i></li>
+					</ul>
+					<li>POST Parameters:</li>
+					<ul>
+						<li>snippetTitle: The title of the Snippet</li>
+						<li>snippetDescription: The description of the Snippet</li>
+						<li>snippetContent: The content of the Snippet</li>
+					</ul>
+				</ul>
+				</p>
+				<a id="sample_requests"></a><h2>Sample requests</h2>
+				<hr>
+				<p>
+					<ul>
+						<li>http://blawg.hu/demo/sharehub/api.php?method=GET</li>
+						<li>POST: apiKey=<i>APIKEY</i></li>
+					</ul>
+					This will return with all the Snippets stored on the HUB associated with the API key in a JSON file format.
+					<ul>
+						<li>http://blawg.hu/demo/sharehub/api.php?method=ADD</li>
+						<li>POST: apiKey=APIKEY</li>
+						<li>POST: snippetTitle=TITLE</li>
+						<li>POST: snippetDescription=DESCRIPTION</li>
+						<li>POST: snippetContent=CONTENT</li>
+					</ul>
+					This will add a Snippet to the HUB associated with the API key.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

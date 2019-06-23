@@ -1,0 +1,92 @@
+.snippetContentStyle{
+	white-space: pre-line;
+}
+
+.signin{
+	margin: auto;
+    width: 450px;
+	height: 400px;
+	background: #F4F4F4;
+	border: 1px #DDDDDD solid;
+	border-radius: 10px;
+	padding: 20px;
+	
+	position:absolute;
+	top:50%;
+    left:50%;
+    margin-left:-225px;
+    margin-top:-200px;
+	transition: width .5s, height .5s;
+	-moz-transition: width .1s, height .1s;
+	-webkit-transition: width .1s, height .1s;
+	
+}
+
+.alert{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.form-control:focus{
+	color:#495057;
+	background-color:#fff;
+	border-color:#64A19D;
+	outline:0;
+	box-shadow:0 0 0 .2rem rgba(100,161,157,.25);
+}
+
+.longButton{
+	width: 100%;
+	margin-top: 15px;
+}
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	background:linear-gradient(to bottom,rgba(22,22,22,.1) 0,rgba(22,22,22,.5) 75%,#161616 100%),url(../img/signin_bg.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-size:cover;
+}
+
+@media only screen and (max-width: 600px) {
+	.signin{
+		margin: auto;
+		width: 350px;
+		height: 300px;
+		background: #F4F4F4;
+		border: 1px #DDDDDD solid;
+		border-radius: 10px;
+		padding: 20px;
+		
+		position:absolute;
+		top:50%;
+		left:50%;
+		margin-left:-225px;
+		margin-top:-200px;
+	}
+	
+	h1{
+		font-size: 90%;
+	}
+	
+	.form-control{
+		font-size: 80% !important;
+		/*margin-bottom: 0px !important;*/
+	}
+	
+	label{
+		font-size: 80% !important;
+	}
+	
+	.longButton{
+		width: 100%;
+		margin-top: 0px;
+	}
+	
+	h6{
+		font-size: 70%;
+	}
+}

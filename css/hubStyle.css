@@ -1,0 +1,13 @@
+.endOfPageMarker{
+	width: 30px;
+}
+
+.underline{
+	text-decoration: underline;
+	text-transform:uppercase;
+	margin: 0px;
+}
+
+.linksCaption{
+	margin: 0px;
+} 

@@ -1,0 +1,28 @@
+.form-control:focus{
+	border-color:#96D3CF;
+	outline:0;
+	box-shadow:0 0 0 .2rem rgba(100,161,157,.35);
+}
+
+.snippetContentStyle{
+	white-space: pre-line;
+}
+
+.addPanel{
+	background: #F4F4F4;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	border: 1px #DDDDDD solid;
+	display: inline-box;
+}
+
+.wrapper{
+	text-align: center;
+}
+
+.hrSmall{
+	width: 200px;
+	margin-left: 0px;
+}

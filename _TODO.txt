@@ -1,0 +1,16 @@
+ [DONE] [2018-09-19] make hubs privately sharable, so if anyone not permitted to view a specific hub, even if types in the correct number in the address field, it returns a denied message
+ [DONE] [2018-09-22] make snippets editable
+ [DONE] [2018-09-23] fix user settings not being saved...
+ [DONE] [2018-09-25] fix random API key generator
+ [DONE] [2018-09-26] make the UI responsive
+ [DONE] [2018-09-26] check if entered email already exists at registration
+ [DONE] [2018-10-01] make the addSnippet markdown compatible, render markdown on pageload
+ [DONE] [2018-10-08] Change the size of the content edix box on the edit snippet pagel
+ [DONE] [2018-10-09] Make the admin page!
+
+ [PENDING] at file upload, check the space left and don't allow to upload a single file with the size more thant the remaining, this way deprecating the 50MB single file size limit
+ [PENDING] Edit the colors of the markdown syntax highlighter
+ [PENDING] Make the snippet type images smaller
+ [PENDING] Create a form on the admin page where the admin can edit the news text!
+
+ <?php echo '<a class="nav-link" href="hub.php?id=' . $uid . '" target="_blank"><i class="fas fa-eye "></i> View my HUB</a>'; ?>
